@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="28571" started-at="2016-01-05T09:56:27Z" finished-at="2016-01-05T09:56:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="28571" started-at="2016-01-05T09:56:27Z" finished-at="2016-01-05T09:56:56Z">
+      <class name="dependentTestPack.DependencyTest">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:dependentTestPack.DependencyTest@7e0babb1]" name="LaunchBrowser" duration-ms="15970" started-at="2016-01-05T15:26:27Z" finished-at="2016-01-05T15:26:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:dependentTestPack.DependencyTest@7e0babb1]" name="SignIn" duration-ms="9538" started-at="2016-01-05T15:26:43Z" depends-on-methods="dependentTestPack.DependencyTest.LaunchBrowser" finished-at="2016-01-05T15:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="LogOut()[pri:0, instance:dependentTestPack.DependencyTest@7e0babb1]" name="LogOut" duration-ms="3043" started-at="2016-01-05T15:26:53Z" depends-on-methods="dependentTestPack.DependencyTest.SignIn" finished-at="2016-01-05T15:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+      </class> <!-- dependentTestPack.DependencyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
